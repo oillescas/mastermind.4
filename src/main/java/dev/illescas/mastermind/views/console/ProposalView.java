@@ -36,12 +36,12 @@ public class ProposalView extends WithConsoleView {
 		this.proposedCombinationView.showLooser();
 	}
 
-	public List<Color> read() {
-		return this.proposedCombinationView.read();
+	public List<Color> readCombination() {
+		return this.proposedCombinationView.readCombination();
 	}
 
 	public void showError(Error error) {
-		new ErrorView(error).writeln();
+		new ErrorView(error).showError();
 	}
 
 

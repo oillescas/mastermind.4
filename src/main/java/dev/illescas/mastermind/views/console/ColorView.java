@@ -9,7 +9,7 @@ class ColorView extends dev.illescas.mastermind.views.ColorView {
 		super(color);
 	}
 
-	void write() {
+	void showColor() {
 		new Console().write(ColorView.INITIALS[this.color.ordinal()]);
 	}
 

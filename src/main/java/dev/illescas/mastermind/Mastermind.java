@@ -11,7 +11,7 @@ import dev.illescas.mastermind.models.Session;
 import dev.illescas.mastermind.models.State;
 import dev.illescas.mastermind.models.StateValue;
 
-public abstract class Mastermind {
+public class Mastermind {
 	
 	private HashMap<StateValue, Controller> controllers;
 	private Session session;
@@ -37,6 +37,10 @@ public abstract class Mastermind {
 				controller.control();
 			}
 		} while (controller != null);
+	}
+	
+	public static void main(String[] args) {
+		new Mastermind().play();
 	}
 
 }

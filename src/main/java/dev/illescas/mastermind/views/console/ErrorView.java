@@ -9,7 +9,7 @@ class ErrorView extends dev.illescas.mastermind.views.ErrorView {
 		super(error);
 	}
 
-	public void writeln() {
+	public void showError() {
 		new Console().writeln(ErrorView.MESSAGES[this.error.ordinal()]);
 	}
 

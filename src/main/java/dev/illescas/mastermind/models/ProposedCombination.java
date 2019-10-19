@@ -4,9 +4,9 @@ import java.util.List;
 
 import dev.illescas.mastermind.types.Color;
 
-public class ProposedCombination extends Combination {
+class ProposedCombination extends Combination {
 
-	public ProposedCombination(List<Color> colors) {
+	ProposedCombination(List<Color> colors) {
 		this.colors = colors;
 	}
 

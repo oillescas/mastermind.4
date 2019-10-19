@@ -66,12 +66,17 @@ public class ProposalController extends Controller {
 	private int getWhites(int position) {
 		return this.session.getWhites(position);
 	}
+	
+	public int getWidth() {
+		return this.session.getWidth();
+	}
+
 
 	@Override
 	public void control() {
 		Error error;
 		do {
-			List<Color> colors = this.proposalView.read();
+			List<Color> colors = this.proposalView.readCombination();
 			error = this.addProposedCombination(colors);
 			if (error != null) {
 				this.proposalView.showError(error);

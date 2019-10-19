@@ -16,11 +16,11 @@ class ProposedCombinationView extends WithConsoleView {
 
 	public void showCombination(List<Color> colors) {
 		for (Color color : colors) {
-			new ColorView(color).write();
+			new ColorView(color).showColor();
 		}
 	}
 
-	public List<Color> read() {
+	public List<Color> readCombination() {
 		String characters = this.console.readString(MessageView.PROPOSED_COMBINATION.getMessage());
 		List<Color> colors = new ArrayList<Color>();
 		for (int i=0; i<characters.length(); i++) {

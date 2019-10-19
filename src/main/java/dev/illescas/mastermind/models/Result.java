@@ -1,12 +1,12 @@
 package dev.illescas.mastermind.models;
 
-public class Result {
+class Result {
 
-	private int blacks = 0;
+	 int blacks = 0;
 
 	private int whites = 0;
 
-	public Result(int blacks, int whites) {
+	Result(int blacks, int whites) {
 		assert blacks >= 0;
 		assert whites >= 0;
 		this.blacks = blacks;
@@ -17,11 +17,11 @@ public class Result {
 		return this.blacks == Combination.getWidth();
 	}
 
-	public int getBlacks() {
+	int getBlacks() {
 		return this.blacks;
 	}
 
-	public int getWhites() {
+	int getWhites() {
 		return this.whites;
 	}
 
